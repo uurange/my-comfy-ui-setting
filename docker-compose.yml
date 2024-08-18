@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  comfyui:
+    image: runpod/stable-diffusion:comfy-ui-5.0.0
+    container_name: comfyui-container
+    ports:
+      - "3000:3000"  # Maps port 3000 on the host to port 3000 in the container
+    volumes:
+      - ./comfyui-data:/app/data  # Maps a local directory to a directory in the container for persistence
+    tty: true  # Keeps the container running so you can attach to it
+    stdin_open: true  # Allows you to open an interactive shell into the container
+    command: /bin/bash  # Starts the container with a bash shell so you can interact with it
