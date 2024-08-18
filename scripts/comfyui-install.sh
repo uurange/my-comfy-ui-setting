@@ -1,4 +1,4 @@
-cd ComfyUI
+cd /ComfyUI
 
 # 가장 최근 commit으로 이동
 git fetch origin
