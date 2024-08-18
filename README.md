@@ -44,6 +44,7 @@ mygit/ComfyUI % python main.py
 
 ### Quick Start
 ```bash
-
+git clone https://github.com/uurange/my-comfy-ui-setting.git
+make comfy-setup
 ```
 
